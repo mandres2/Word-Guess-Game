@@ -7,10 +7,8 @@ html{
 }
 body{
     background-image:url('https://images.unsplash.com/photo-1552985190-626af207368d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80');
-    
     /* Full height */
     height: 100%; 
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +195,7 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #intro
 #gamePage{
     display: none;
     text-align: center;
-}
+    }   
     #categoryName{
         width: 100%;
         margin: 20px auto 0px auto;
@@ -243,13 +241,13 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #intro
         height: 58px;
         margin: 0px 10px 10px 0px;
         cursor: pointer;
-        background-color: #adadad;
+        background-color: #ffffff;
     }
     #letterBank div:hover {
-        background-color: #797979;
+        background-color: #333;
     }
     #letterBank div:active {
-        background-color: gray;
+        background-color: #333;
         width: 50px;
         font-size: 45px;
         padding-top: 3px;
@@ -258,6 +256,7 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #intro
         margin-top: 5px;
         height: 70px;
         visibility: visible;
+        font-size: 44px;
     }
     #again, #home, #home1{
         display: none;
@@ -283,6 +282,7 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #intro
 
     /* Media Queries */
 
+    /* Media Queries for 866px */
     @media (max-width: 866px){
     #introPage, #singlePage, #multiPage {
         width: 500px;

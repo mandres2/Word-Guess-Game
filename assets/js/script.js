@@ -110,6 +110,8 @@ function hangman(){
     draw();
 }
 
+// This function draws out the figure.
+
 function draw(){
     var ctx = document.getElementById("hangman").getContext('2d');
         ctx.fillStyle = "white";
@@ -280,7 +282,7 @@ function guessLetter(){
     if(numWrong==6){
         results.style.visibility = "visible";
         results.style.color = "red";
-        results.innerHTML = "You can't miss another letter!";
+        results.innerHTML = "You can't miss another letter...";
         if(ul1 == 50){
             results.style.lineHeight = "70px";
             results.style.fontSize = "30px";
@@ -321,7 +323,7 @@ function win(){
         results.style.visibility = "visible";
         results.style.color = "#00b100";
     if(numWrong > 6){
-        results.innerHTML = "It's about time you figured it out...";
+        results.innerHTML = "You got it right.";
         document.getElementById('letterBank').style.display = "none";
         again.style.display = "block";
         document.getElementById('home').style.display = "block";
